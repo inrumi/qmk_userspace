@@ -5,12 +5,6 @@
 
 #define HOME G(KC_LEFT)
 #define END G(KC_RGHT)
-#define FWD G(KC_RBRC)
-#define BACK G(KC_LBRC)
-#define TABL G(S(KC_LBRC))
-#define TABR G(S(KC_RBRC))
-#define SPCL A(G(KC_LEFT))
-#define SPC_R A(G(KC_RGHT))
 #define UNDO G(KC_Z)
 #define REDO G(S(KC_Z))
 #define CUT G(KC_X)
