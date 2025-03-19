@@ -148,3 +148,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 layer_state_t layer_state_set_user(layer_state_t state) {
     return update_tri_layer_state(state, SYM, NAV, NUM);
 }
+
+#ifdef ENCODER_MAP_ENABLE
+// clang-format off
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [DEF]       = {ENCODER_CCW_CW(KC_WH_D, KC_WH_U),  ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+    [FUN]   = {ENCODER_CCW_CW(KC_DOWN, KC_UP),    ENCODER_CCW_CW(KC_LEFT, KC_RGHT)},
+    [NAV] = {ENCODER_CCW_CW(KC_PGDN, KC_PGUP),  ENCODER_CCW_CW(KC_VOLU, KC_VOLD)},
+    [FUN] = {ENCODER_CCW_CW(KC_PGDN, KC_PGUP),  ENCODER_CCW_CW(KC_VOLU, KC_VOLD)},
+    [NUM]    = {ENCODER_CCW_CW(RGB_VAD, RGB_VAI),  ENCODER_CCW_CW(RGB_SPD, RGB_SPI)},
+    [SYM]    = {ENCODER_CCW_CW(RGB_RMOD, RGB_MOD), ENCODER_CCW_CW(KC_LEFT, KC_RGHT)},
+};
+// clang-format on
+#endif // ENCODER_MAP_ENABLE
