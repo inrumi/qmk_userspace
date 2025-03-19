@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [NAV] = LAYOUT_split_3x5_3(
         KC_ESC,  KC_TAB,  SW_WIN,  SW_ALT,  SW_CTL,  /**/  KC_PGUP, HOME,    KC_UP,   END,     KC_BSPC,
         OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  XXXXXXX, /**/  KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL,
-        UNDO,    CUT,     COPY,    REDO,    PASTE,   /**/  KC_CAPS, DPI_MOD, XXXXXXX, XXXXXXX, KC_ENT,
+        UNDO,    CUT,     COPY,    REDO,    PASTE,   /**/  KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT,
                           _______, _______, _______, /**/  KC_DEL, _______, _______
     ),
 
@@ -65,8 +65,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [FUN] = LAYOUT_split_3x5_3(
-        KC_MSTP, KC_MPRV, KC_MNXT, KC_MPLY, KC_VOLU, /**/  XXXXXXX,  KC_F9,  KC_F10, KC_F11, KC_F12,
-        OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_VOLD, /**/  XXXXXXX,  KC_F5,  KC_F6,  KC_F7,  KC_F8,
+        KC_MSTP, KC_MPRV, KC_MNXT, KC_MPLY, KC_VOLU, /**/  DPI_MOD,  KC_F9,  KC_F10, KC_F11, KC_F12,
+        OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_VOLD, /**/  DPI_RMOD,  KC_F5,  KC_F6,  KC_F7,  KC_F8,
         UNDO,    CUT,     COPY,    REDO,    PASTE,   /**/  XXXXXXX,  KC_F1,  KC_F2,  KC_F3,  KC_F4,
                           _______, _______, _______, /**/  _______, _______, _______
     ),
